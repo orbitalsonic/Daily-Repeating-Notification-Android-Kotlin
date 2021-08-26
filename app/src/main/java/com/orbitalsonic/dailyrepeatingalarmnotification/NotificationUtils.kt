@@ -51,7 +51,7 @@ class NotificationUtils(context:Context) {
     private fun initNotificationBuilder() {
 
         // Create an explicit intent for an Activity in your app
-        val sampleIntent = Intent(mContext, MainActivity::class.java).apply {
+        val sampleIntent = Intent(mContext, SampleActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
         val pendingIntent: PendingIntent = PendingIntent.getActivity(mContext, 0, sampleIntent, 0)
